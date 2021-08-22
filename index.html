@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo website</title>
+     <link rel="shortcut icon" href="./img/logo.png"/>
+     <!--bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- : Bootstrap links abowe-->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+<!--Navigation: -->
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!--BS navigation, dark theme, fixed to the top-->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demoNav"> <!--Mobile hamburger-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"> <!--logo in navigation-->
+            <img src="./img/logo.png">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="demoNav"> <!--Links in navigation. Collapse on mobile-->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Početna</a></li>
+            <li><a href="#one">Usluge</a></li>
+            <li><a href="#two">Cena</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--Header(bellow nav): -->
+    <div class="container-fluid header">
+      <div class="row"> <!--Bootstrap grid system, each row has 12 columns-->
+        <div class="col-sm-6 leftin">
+          <h1>Transport robe</h1>
+          <p>Prevoz Vaše robe pikapom do željene lokacije</p>
+          <p>Vaše je samo da pozovete!</p>
+          <a href="#one"><button type="button" class="btn">Saznaj još <span class="caret"></span></button></a> <!--Caret- down arrow, rotate it in css to point right. Btn- bs standard button class-->
+        </div>
+        <div class="col-sm-6 rightin"> <!--pickup vehicle img, comes from the right. Not vissible on smartphone-->
+          <img src="./img/kombi.png" alt="">
+        </div>
+      </div>
+    </div>
+
+<!--First page: -->
+    <div class="container-fluid page1" id="one"> <!--Use id as a target for nav link-->
+      <h1>Usluge</h1>
+      <hr>
+      <div class="container prva">
+        <div class="row">
+          <div class="col-sm-1">
+
+          </div>
+          <div class="col-sm-10">
+            <p><b>Prevoz robe pikapom</b> u Sremskoj Mitrovici i okolini je naša osnovna usluga.</p>
+            <p>Pored usluga prevoza, nudimo i usluge: odnošenja nepotrebnih stvari, prevoza specijalnih tereta, kasa, bankomata, TA peći, robe za pijacu, kao i prevoza <b>obezbeđenih kućnih ljubimaca</b>.</p>
+            <p id="kile">do 500kg</p>
+          </div>
+          <div class="col-sm-1">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Second page: -->
+    <div class="container-fluid tabl" id="two">
+      <h1>Cena prevoza</h1>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <table>
+              <thead>
+                <tr>
+                  <th>Lokacija</th>
+                  <th>Cena</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sremska Mitrovica</td>
+                  <td>1500 rsd</td>
+                </tr>
+                <tr>
+                  <td>Okolina</td>
+                  <td>Po dogovoru</td>
+                </tr>
+              </tbody>
+          </table>
+          </div>
+          <div class="col-sm-6">
+            <img src="./img/arrow.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Contact: -->
+    <div class="container-fluid cont" id="contact">
+      <h1>Javite nam se!</h1>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1">
+            <!--Empty space on the left-->
+          </div>
+          <div class="col-sm-5"> <!--call me on the phone-->
+            <a href="tel:0694864319"><img src="./img/telefon.png" class="telimg"></a>
+            <p><a href="tel:0694864319">069-4864319</a></p>
+          </div>
+          <div class="col-sm-5"> <!--send email to me-->
+            <a href="mailto:nenadgrujicposlovni@gmail.com"><img src="./img/contact.png" class="contactimg"></a>
+            <p class="margin"><a href="mailto:nenadgrujicposlovni@gmail.com">nenadgrujicposlovni@gmail.com</a></p>
+          </div>
+          <div class="col-sm-1">
+            <!--Empty space on the right-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Footer: -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="https://www.instagram.com/nenadgrujic_/" target="_blank"><img src="./img/insta.png" alt="Nenad Grujic  instagram"></a> <!--instagram logo and link-->
+          </div>
+          <div class="col-sm-6">
+            <a href="https://www.facebook.com/grujawalking" target="_blank"><img src="./img/face.png" alt="Nenad Grujic facebook"></a> <!--facebook logo and link-->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2021 <a href="https://www.instagram.com/baneiks/" target="_blank">Banex<a/></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
